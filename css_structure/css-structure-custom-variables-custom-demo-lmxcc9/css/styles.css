@@ -1,0 +1,53 @@
+:root {
+  /*You can create custom CSS Variables in the root selector. 
+  It is very useful for colors*/
+  --primary-color: #ff4a11;
+  --secondary-color: #e7e9f1;
+  --font-color: #282828;
+  /*You can also create variables for any other value */
+  --cool-bordershape: 60% 40% 75% 25% / 49% 58% 42% 51%;
+  --other-cool-bordershape: 67% 33% 39% 61% / 39% 53% 47% 61%;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --primary-color: blue;
+  }
+}
+
+h1 {
+  color: var(--primary-color);
+  background-color: var(--secondary-lightgrey);
+  border-radius: var(--cool-bordershape);
+  width: fit-content;
+  padding: 10px;
+}
+
+img {
+  border-radius: 7px;
+}
+
+p {
+  color: var(--font-color);
+  align-self: flex-start;
+}
+
+.card {
+  color: var(--font-color);
+  background-color: var(--secondary-color);
+  padding: 70px;
+}
+
+.shape1 {
+  border-radius: var(--cool-bordershape);
+}
+
+.shape2 {
+  border-radius: var(--other-cool-bordershape);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
