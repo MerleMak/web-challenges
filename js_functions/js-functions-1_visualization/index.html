@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>JS Functions</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <h1>JS Functions</h1>
+    <div>
+      <h2>Function Syntax</h2>
+      <div class="sidenoteWrapper">
+        <em
+          >This is a function "template". Click the individual elements for a
+          brief explanation.</em
+        >
+      </div>
+      <section class="functionContainer syntax">
+        <div data-js="functionKeyword">function</div>
+        <div data-js="nameAndParameters">
+          <span>name</span>
+          <span>(parameters)</span>
+        </div>
+        <div data-js="openingBracket">{</div>
+        <div class="statementContainer" data-js="functionBody">
+          <span>function statement;</span>
+          <span>function statement;</span>
+          <span>function statement;</span>
+        </div>
+        <div data-js="closingBracket">}</div>
+      </section>
+    </div>
+
+    <div class="infoBox" data-js="infoBox">
+      <p><strong>Infobox</strong></p>
+      <h3 data-js="infoTitle"></h3>
+      <p data-js="infoDesc"></p>
+    </div>
+
+    <div>
+      <h2>Function Declaration</h2>
+      <div class="sidenoteWrapper">
+        <em
+          >This is where you declare how your function works. Think of it as a
+          blueprint.</em
+        >
+        <em>Why a blueprint?</em>
+        <em
+          >Usually, we start with a problem we want to solve. Our function
+          declaration is the blueprint to how we want to solve the problem in
+          the future.
+        </em>
+      </div>
+      <section class="functionContainer">
+        <div>function</div>
+        <div>
+          <span>addNumbers</span>
+          <span>(num1, num2)</span>
+        </div>
+        <div>{</div>
+        <div class="statementContainer">
+          <span>const sum = <b>num1</b> + <b>num2;</b></span>
+          <span>console.log(sum);</span>
+          <em>// prints sum to the console</em>
+        </div>
+        <div>}</div>
+      </section>
+    </div>
+
+    <div>
+      <h2>Function Call</h2>
+      <div class="sidenoteWrapper">
+        <em
+          >This is how you use your function. The function call consists of the
+          function name and the braces containing the values you want to pass to
+          the function.</em
+        ><em>
+          You can use your function anywhere in the same scope (e.g. file) you
+          declared it in, even <a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting target="_blank">above its initial declaration</a>.</em
+        >
+      </div>
+      <section class="functionCall">
+        <div>
+          <span>addNumbers</span>
+          <span>(2, 3)</span>
+        </div>
+        <em>// 5 will be printed to the console</em>
+      </section>
+      <div class="sidenoteWrapper">
+        <em
+          >💡 When you declare the function, the values in the braces () are
+          called "parameters", but when you call (i.e. use) the function, they
+          are called "arguments".</em
+        >
+
+        <em>This is how I memorized it:</em>
+
+        <em
+          ><b>P</b>arameters are <b>P</b>laceholders. <b>A</b>rguments are
+          <b>A</b>ctual values.</em
+        >
+      </div>
+    </div>
+  </body>
+</html>

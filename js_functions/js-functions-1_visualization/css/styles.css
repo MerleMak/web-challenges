@@ -1,0 +1,147 @@
+/** Hello Adventurer! There's some pretty wild CSS yonder. Proceed with caution. **/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: system-ui;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  background-color: #f9e79f;
+  padding: 6px;
+}
+
+span b {
+  font-weight: normal;
+  color: white;
+}
+
+.functionContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+  background-color: #ebedef;
+  padding: 10px;
+}
+
+.functionContainer > div:nth-child(3),
+.functionContainer > div:nth-child(4),
+.functionContainer > div:last-child,
+.functionContainer > div:first-child {
+  background-color: lightskyblue;
+}
+
+.functionContainer > div:nth-child(2) {
+  background-color: mediumaquamarine;
+}
+
+.functionContainer > div:nth-child(2) > span ~ span {
+  color: white;
+}
+
+.functionContainer > div:last-child {
+  width: fit-content;
+}
+
+.functionContainer > * {
+  padding: 4px;
+}
+
+.functionContainer > div {
+  cursor: pointer;
+}
+
+.statementContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-column: span 3;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: #d4e6f1;
+}
+
+.infoBox * {
+  margin: 0;
+}
+
+.infoBox > h3 {
+  background-color: white;
+  width: fit-content;
+}
+
+.sidenoteWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-block: 20px;
+}
+
+.functionCall {
+  background-color: #ebedef;
+  padding: 10px;
+}
+
+.functionCall > * {
+  padding: 4px;
+}
+
+.functionCall div {
+  width: fit-content;
+  background-color: mediumaquamarine;
+}
+
+.functionCall span:nth-child(2) {
+  color: white;
+}
+
+.functionCall em {
+  color: grey;
+}
+
+.syntax {
+  column-gap: 10px;
+}
+
+.syntax div:nth-child(1),
+.syntax div:nth-child(2),
+.syntax div:nth-child(3),
+.syntax div:nth-child(4),
+.syntax div:nth-child(5) {
+  background-color: transparent;
+}
+
+.syntax div:nth-child(1),
+.syntax div:nth-child(3),
+.syntax div:nth-child(4),
+.syntax div:nth-child(5) {
+  border: 2px dotted lightskyblue;
+}
+
+.syntax div:nth-child(2) {
+  border: 2px dotted mediumaquamarine;
+}
+
+.syntax div:nth-child(2) > span:nth-child(2) {
+  color: grey;
+}
